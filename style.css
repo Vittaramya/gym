@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+}
+img{
+    width: 100%;
+
+}
+Body{
+    background-color: rgb(9, 213, 240);
+
+
+nav{
+    background: purple;
+    
+}
+.Flex{
+ display: flex;
+ align-items: center;
+}
+}
+
+/* Media queries- Moible First Approach*/
+@media(min-width:300px) {
+    nav img{
+        height:5vh;
+        width: auto;
+        margin-right: 1rem;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        padding: 2vh 0;
+
+    }
+    nav h3{
+        color: powderblue;
+        font-weight: bolder;
+    }
+    .hero .one h4 p{
+        text-align: center;
+        padding: 2.5vh 0;
+        padding-bottom: 1rem;
+       padding-left: 1.5rem;
+    }
+   .hero .one h4{
+        margin-top: 5vh;
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }
+    .hero .one p{
+        padding-left: 5 rem;
+        padding-top: 2 rem;
+    }
+    .one img{
+        padding-top: 3vh;
+        padding-left: 3vh;
+        width: 70%;
+    }
+    .two{
+        background: palegreen;
+        width: 70%;
+        margin: 5vh auto;
+        padding: 1.5rem;
+        border-radius: 12px;
+    }
+    .two label{
+        color: blue;
+        font-size: 1.1rem;
+        
+    }
+    .two input[type="text"]{
+        border: none;
+        
+        padding: 1rem;
+        outline: none;
+        border-bottom: 1px solid #212121;
+        font-size: 1.2rem;
+        width: 90%;
+
+    }
+    .two input[type="radio"], input[type="checkox"]{
+        margin-right: 1rem;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+
+    }
+    .checkboxes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .button{
+        background: red;
+        color: rgb(237, 240, 56);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-top: 1rem;
+        padding: 0.9rem;
+        border-radius: 12px;
+        width: 90%;
+    }
+.epquipment_list h3{
+    text-align: center;
+
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.card{
+    background:rgb(233, 186, 59);
+    border-radius: 10px;
+    padding: 0.8rem;
+    margin: 1.5rem;
+}
+.segment A{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(20, 20, 100);
+    align-items: center;
+}
+.segment A h3{
+    text-align: center;
+    padding-top: 4vh;
+}
+.segment A img{
+    width: 70%;
+}
+.segment B{
+    background: blue;
+}
+.segment B h3{
+    text-align: center;
+    padding-top: 4vh;
+}
+.segment B img{
+    background-color: rgb(30, 192, 38);
+    width: 70%;
+}
+
+@media (min-width :700px){
+    .one h4 , p{
+        font-size: 1.6rem;
+    
+    }
+    .epquipment_list h3{
+        font-size: 1.6rem;
+
+    }
+    .cards{
+        margin: 4.5rem;
+    }
+    .segments{
+        display: flex;
+
+    }
+}
+@media (min-width : 900px){
+    nav{
+        justify-content: 1 left;
+        padding-left: 10vh;
+    }
+    .one h4,p{
+        display: none;
+    }
+    .hero {
+        padding-top: 10vh;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .two form{
+        padding: 0 rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .two{
+        padding: 2rem;
+
+    }
+    .two .button{
+        width: 100%;
+    }
+    .epquipment_list h3{
+        font-size: 1 rem;
+        margin-top: 8vh;
+
+    }
+    .cards{
+        grid-template-columns: repeat(4, 1fr);
+    
+    }
+    
+    .segment A img{
+        width: 40%;
+        padding-right: 5rem;
+
+    }
+    .segment A h3{
+        font-size: 1rem;
+    }
+    .segment B img{
+        width: 20%;
+
+    }
+    .segment B h3{
+        font-size: 1rem;
+    }
+
+
+}    
+}
+
+}
